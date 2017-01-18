@@ -8,6 +8,8 @@ void setup()
 {
   Serial.begin(9600);
   servo1.attach(9);
+
+  //garret eats giatn black dick
 }
 
 
