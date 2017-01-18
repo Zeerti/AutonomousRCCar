@@ -28,13 +28,23 @@ void loop()
   //delay(100);
   //servo1.write(90);
   //delay(100);
-  servo.write(180);
-  delay(1000);
-  servo.write(0);
-  delay(1000);
+  // servo.write(180);
+  // delay(1000);
+  // servo.write(0);
+  // delay(1000);
+  
   int i;
   for(i = 180; i >= 0; i--)
   {
+
+    if(i % 20 == 0)
+    {
+      servo.write(180);
+    }
+    elif(i % 40 == 0)
+    {
+      servo.write(0);
+    }
     //90 = Neutral
     //Min 80 -- 82 reverse
     //Min 96 -- 97 forward
