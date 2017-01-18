@@ -14,7 +14,7 @@ Servo esc;
 
 void setup() 
 {
-   Serial.begin(9600);
+   
    servo.attach(9);
    esc.attach(8);
 
@@ -41,7 +41,7 @@ void loop()
     {
       servo.write(180);
     }
-    elif(i % 40 == 0)
+    else if(i % 40 == 0)
     {
       servo.write(0);
     }
